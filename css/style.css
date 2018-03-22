@@ -1,0 +1,119 @@
+#amt{
+    display: none;
+}
+
+body{
+    background-repeat: no-repeat;
+}
+
+input::placeholder{
+    color: #5a1313;
+}
+
+#main{
+    background-color: rgba(80, 29, 29, 0.14);
+    width: 400px;
+    height: 550px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#form #main{
+    padding-top: 5px;
+}
+
+#Head{
+	color: #982525;
+	text-align: center;
+	font-family: Garamond;
+	font-size: 80px;
+}
+
+#form p{
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 26px;
+}
+
+#form #User{
+    width: 320px;
+    height: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: whitesmoke;
+    background:  rgba(25, 2, 2, 0.36);
+    outline: none;
+    border: 0px solid;
+    border-radius: 10px;
+    margin-left: 26px;
+}
+
+#form #Pass{
+    width: 320px;
+    height: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-size:bold;
+    color: whitesmoke;
+    background:rgba(25, 2, 2, 0.36);
+    outline: none;
+    border: 0px solid;
+    border-radius: 10px;
+    margin-left: 26px;
+}
+
+#form #Amount{
+    width: 320px;
+    height: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-size: bold;
+    font-style: italic;
+    color: whitesmoke;
+    background:  rgba(25, 2, 2, 0.36);
+    outline: none;
+    border: 0px solid;
+    border-radius: 10px;
+    margin-left: 26px;
+}
+
+#form #option{
+    width: 340px;
+    height: 40px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size:20px;
+    margin-left: 26px;
+    border-radius: 10px;
+    border: 2px solid rgba(25, 2, 2, 0.36);
+    background: rgba(25, 2, 2, 0.15);
+    
+}
+
+#form #check{
+    margin-left: 26px;
+    width: 25px;
+    height: 25px;
+}
+
+#form #btn{
+    width: 340px;
+    height: 40px;
+    color:black;
+    font-family: sans-serif;
+    font-size: 20px;
+    border: 2px solid rgba(25, 2, 2, 0.36);
+    border-radius: 10px;
+    background: rgba(25, 2, 2, 0.15);
+    margin-left: 26px;
+}
+
+#form #btn:hover{
+    background-color: #982525;
+    color: cornsilk;
+}

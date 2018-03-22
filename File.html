@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title> Student Account Form </title>
+        <script src="jquery-3.2.1.js"> </script>
+        <script>
+            $(document).ready(function(){
+                $("#option").change(function(){
+                    if ($("#option").val()== "deposit"){
+                        $('#amt').show();
+                    }
+                    else if($("#option").val()== "withdraw"){
+                        $('#amt').show();
+                    }
+                    else if ($("#option").val()== "show"){
+                        $('#amt').hide();
+                    }
+                    else{
+                        $('#amt').hide();
+                    }
+                });
+            });
+        </script>
+    </head>
+    
+    <meta name = "veiwport" content="width = device-width, initial-scale = 1">
+    
+    <link rel = "stylesheet" href= "css/style.css">
+    
+    <!--<script type="text/javascript">
+        function appear(){
+            ptr1 = document.getElementById("amt");
+            ptr2 = document.getElementById("option");
+
+            if(ptr2.value == 'deposit') {
+                ptr1.style.display = "block";
+            }
+            else if(ptr2.value == 'withdraw') {
+                ptr1.style.display = "block";
+            }
+            else if(ptr2.value == 'show') {
+                ptr1.style.display = "none";
+            }
+            else {
+                ptr1.style.display = "none";
+            }
+
+        }
+    </script>-->
+
+	<body background = "Bank.jpg">
+		<h1 id = "Head"> HIGHLANDERS ACCOUNT</h1>
+            <div id = "form">
+                <form id= "main" action = 'NewForm.php'>
+                    
+                    <p>UserID</p>
+                    <input id = "User" type = "text" name = "User" placeholder="Enter Username" autocomplete="off" required>
+                    
+                    <p>Password</p>
+                    <td><input id = "Pass" type = "text" name = "Pass" placeholder="Enter Password" required></td>
+                    
+                    <div id="amt">
+                    <p>Amount</p>
+                    <td><input id = "Amount" type = "" placeholder="Enter Amount" name = "Amount"></td>
+                    </div>          	
+                    <br>
+                    
+                    <p>Select type</p>
+                    <select id = "option" name = "option" onchange="appear()">
+                    <option value = "">Select option</option>
+                    <option value = "deposit"> Deposit </option>
+                    <option value = "withdraw"> Withdraw </option>
+                    <option value = "show"> Statement </option>
+                </select>
+                    
+                    <p><input  type = "checkbox" name = "mail" value="Y">Request mail copy <br></p>
+                    <button id = "btn" type = "Submit" ><b>Submit</b></button>
+
+                </form>
+        </div>
+	</body>
+</html>
